@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <link rel="stylesheet" href="loginstyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="form-container">
+            
+            <!-- <h1 class="mainhead">COAL MINE CONTROL AND MONITORING SYSTEM USING IOT</h1> -->
+            <!-- <h2 style="text-align: center; color:black ;">Login Form</h2> -->
+            <fieldset class="control" > 
+                
+                <div >
+                    <hr>
+                    <h1>WELCOME TO POP A BALLOON GAME</h1>
+                    <hr>
+                    <img class="logo" src="images/balloonstop.jpg" alt="">
+                    
+                    <label class="label" for="name">Email Address</label>
+                    <input  type="text" class="login_email" id="login_email" placeholder="Enter your Email here"  name="u-name" value="" >
+                <!-- </div> -->
+                <!-- <div class="control"> -->
+                    <label class="label" for="psw">Password</label>
+                    <input  type="password" class="login_password" id="login_password" placeholder="Enter your Password here" name="u-pass" value="" required>
+                <!-- </div> -->
+                <!-- <div class="control"> -->
+                    <input type="button" id="login_btn" class="btn" onclick="login()"  name="" value="Sign In">
+                    <input type="button" id="login_btn" class="btn" onclick="signup()"  name="" value="Sign Up">
+                </div>
+            </fieldset>
+            
+        </div>
+    </section>
+</body>
+<script type="module">
+const firebaseConfig = {
+    apiKey: "AIzaSyD2N5ubH_CqNY5LYCyNodkk-KjNrZhQkwk",
+    authDomain: "popupgame-af82a.firebaseapp.com",
+    projectId: "popupgame-af82a",
+    storageBucket: "popupgame-af82a.appspot.com",
+    messagingSenderId: "942871035442",
+    appId: "1:942871035442:web:93b39e2397eaff8d7e862b",
+    measurementId: "G-JNXKQSN129"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="script.js"></script>
+</html>
